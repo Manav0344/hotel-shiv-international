@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -37,10 +37,7 @@ function App() {
   }, [])
 
   return (
-    <Router
-      basename="/hotel-shiv-international"
-      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-    >
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ScrollToTop />
       <div className="min-h-screen bg-stone-50 dark:bg-charcoal-900 transition-colors duration-300">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
