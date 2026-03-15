@@ -48,6 +48,7 @@ function App() {
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         <Footer />
