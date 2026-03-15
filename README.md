@@ -1,5 +1,7 @@
 # Hotel Shiv International — React Website
 
+Live Demo -- https://manav0344.github.io/hotel-shiv-international/
+
 A modern, responsive hotel website built with **React (Vite)**, **React Router**, **Tailwind CSS**, and **AOS animations**.
 
 ---
