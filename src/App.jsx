@@ -37,7 +37,10 @@ function App() {
   }, [])
 
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router
+      basename="/hotel-shiv-international"
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    >
       <ScrollToTop />
       <div className="min-h-screen bg-stone-50 dark:bg-charcoal-900 transition-colors duration-300">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />

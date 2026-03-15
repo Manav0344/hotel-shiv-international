@@ -14,12 +14,13 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script>
   (function () {
-    var redirect = sessionStorage.getItem('redirect');
-    if (redirect && redirect !== '/') {
-      sessionStorage.removeItem('redirect');
-      window.history.replaceState(null, null,
-        window.location.pathname.replace(/\/$/, '') + redirect
-      );
+    var params = new URLSearchParams(window.location.search);
+    var path = params.get('p');
+    if (path && path !== '/') {
+      var query = params.get('q') ? '?' + params.get('q') : '';
+      var hash = params.get('h') ? '#' + params.get('h') : '';
+      var base = '/hotel-shiv-international';
+      window.history.replaceState(null, null, base + path + query + hash);
     }
   })();
 </script>
